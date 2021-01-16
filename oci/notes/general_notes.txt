@@ -1,0 +1,7 @@
+General Notes
+===============
+
+If you have only one profile in $HOME/.oci then you can directly run oci commands as listed in any notes.  
+But if there are multiple profiles, then based on which profile you want to use append the following command to it. 
+
+--profile <profile> --config-file $HOME/.oci/config
