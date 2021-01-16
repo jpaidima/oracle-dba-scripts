@@ -1,11 +1,4 @@
-General Notes
-===============
-
-If you have only one profile in $HOME/.oci then you can directly run the following commands. 
-But if there are multiple profiles, then based on which profile you want to use append the following command to it. 
-
---profile <profile> --config-file $HOME/.oci/config
-
+See General notes if you are using profiles. 
 
 List All Policy Details in a compartment  
 
