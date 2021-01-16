@@ -1,0 +1,5 @@
+-- vm metadata , shape . Run from oci server 
+
+curl -s http://169.254.169.254/opc/v2/instance/metadata
+
+curl -s http://169.254.169.254/opc/v1/instance/shape
