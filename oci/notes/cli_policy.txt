@@ -1,0 +1,19 @@
+General Notes
+===============
+
+If you have only one profile in $HOME/.oci then you can directly run the following commands. 
+But if there are multiple profiles, then based on which profile you want to use append the following command to it. 
+
+--profile <profile> --config-file $HOME/.oci/config
+
+
+List All Policy Details in a compartment  
+
+oci iam policy list  --all  \
+--compartment-id <comp ocid> 
+
+
+Get policy details for a particular policy 
+
+oci iam policy get \
+--policy-id <policy ocid> 
