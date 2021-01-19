@@ -2,4 +2,4 @@
 oci os bucket list  --compartment-id <comp ocid>
 
 -- Find size of the bucket 
-oci os bucket get --name <bucket name> --fields approximateSize
+oci os bucket get --name <bucket name> --fields approximateSize --query 'data."approximate-size"'
