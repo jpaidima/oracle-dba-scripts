@@ -1,0 +1,5 @@
+-- List buckets in a compartment 
+oci os bucket list  --compartment-id <comp ocid>
+
+-- Find size of the bucket 
+oci os bucket get --name <bucket name> --fields approximateSize
