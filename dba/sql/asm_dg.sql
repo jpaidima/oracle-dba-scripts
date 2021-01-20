@@ -1,3 +1,5 @@
+-- asmcmd lsdg
+
 set echo off
 set feed off
 set veri off
