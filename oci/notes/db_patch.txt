@@ -1,0 +1,3 @@
+--  dbcli commands 
+
+ /opt/oracle/dcs/bin/dbcli describe-latestpatch
