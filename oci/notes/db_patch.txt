@@ -1,3 +1,11 @@
 --  dbcli commands 
 
  /opt/oracle/dcs/bin/dbcli describe-latestpatch
+
+
+-- DBASS List available patches - Grid 
+oci db patch list by-db-system --db-system-id <ocid> --all --output table --query "data [*].{version:version}"
+
+-- For db 
+oci db patch list by-database --database-id <ocid> --all --output table --query "data [*].{version:version}"
+
