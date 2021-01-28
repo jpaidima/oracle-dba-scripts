@@ -1,0 +1,3 @@
+# To run a command multiple times. n is interval 
+# On screen it replaces the output with latest run
+watch -n 1 <cmd>
