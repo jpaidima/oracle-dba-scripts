@@ -2,7 +2,7 @@
 # On screen it replaces the output with latest run
 watch -n 1 <cmd>
 
-# Same if we have to do via for loop 
+# Same if we have to do via for loop in bash
 for ((i=1;i<=100;i++)); 
 do
  cmd
