@@ -1,1 +1,4 @@
-DBAAS - /opt/oracle/dcs/log
+DBAAS 
+
+- /opt/oracle/dcs/log
+- /opt/oracle/dcs/log/`hostname -s`/rman/bkup/
