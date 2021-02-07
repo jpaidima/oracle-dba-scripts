@@ -45,4 +45,6 @@ SELECT
 FROM
         v$asm_diskgroup
 ORDER BY
-         1
+         1;
+         
+         
