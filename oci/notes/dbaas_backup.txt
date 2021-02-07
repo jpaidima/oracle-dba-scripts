@@ -1,0 +1,23 @@
+Doc https://docs.oracle.com/en-us/iaas/Content/Database/References/dbacli.htm
+
+dbcli getstatus-backup -h
+Usage: getstatus-backup [options]
+  Options:
+    --backupConfigId, -bi
+      BackupConfigId.
+    --backupType, -t
+      Backup type.
+    --dbId, -i
+      Database Resource ID.
+    --dbName, -in
+      Database Resource Name.
+    --help, -h
+      get help
+    --isLatestBackupReport, -l
+      Latest backup report(Default: true)
+    --json, -j
+      json output
+
+Examples:
+
+dbcli getstatus-backup --dbName <db name> --backupType Archivelog
