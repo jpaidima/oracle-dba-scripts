@@ -1,1 +1,6 @@
+Quick TDE Setup and FAQ (Doc ID 1251597.1)
+Master Note For Transparent Data Encryption ( TDE ) (Doc ID 1228046.1)
+
 How To Recover From Lost Password Of TDE Wallet (Doc ID 2659610.1)
+Impact of Database Recovery and Flashback Database on the TDE Wallet (Doc ID 1327519.1)
+Can a Database Be Restored If The TDE Wallet Is Lost (Missing, Corrupted)? (Doc ID 2560069.1)
