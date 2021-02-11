@@ -1,0 +1,4 @@
+-- ATP Size 
+oci db autonomous-database get --autonomous-database-id <ocid> | grep data-storage
+    "data-storage-size-in-tbs": 1,
+    "used-data-storage-size-in-tbs": 1,
