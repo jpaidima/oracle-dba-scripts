@@ -1,0 +1,8 @@
+-- Compute details 
+oci compute instance get --instance-id <oci>
+
+-- VNIC details 
+oci compute instance list-vnics --instance-id <oci>
+
+- Which hosts / vnic using the nsg 
+oci network nsg vnics list --nsg-id < ocid>
