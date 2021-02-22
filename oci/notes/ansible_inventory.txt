@@ -1,0 +1,12 @@
+https://oracle-cloud-infrastructure-ansible-modules.readthedocs.io/en/latest/dynamic-inventory-script.html
+
+https://docs.oracle.com/en-us/iaas/Content/API/SDKDocs/ansibleinventoryscript.htm
+
+https://github.com/oracle/oci-ansible-modules/tree/master/inventory-script
+
+https://docs.oracle.com/en-us/iaas/Content/API/SDKDocs/ansibledynamicinventoryplugin.htm
+
+To generate dynamic inventory 
+-------------------------------
+
+oci_inventory.py --config $HOME/.oci/config --profile <profile> --list --hostname-format fqdn
