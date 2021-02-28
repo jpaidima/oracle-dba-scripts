@@ -1,7 +1,9 @@
 --  dbcli commands 
 
  /opt/oracle/dcs/bin/dbcli describe-latestpatch
-
+ 
+ dbcli describe-component
+ dbcli describe-job -i <job id>
 
 -- DBASS List available patches - Grid 
 oci db patch list by-db-system --db-system-id <ocid> --all --output table --query "data [*].{version:version}"
@@ -9,3 +11,9 @@ oci db patch list by-db-system --db-system-id <ocid> --all --output table --quer
 -- For db 
 oci db patch list by-database --database-id <ocid> --all --output table --query "data [*].{version:version}"
 
+-- Patch history 
+oci db patch-history list by-database --database-id <ocid>
+
+-- Patch using image 
+oci db database patch --database-id <ocid> \
+ --database-software-image-id <image ocid> --patch-action APPLY 
