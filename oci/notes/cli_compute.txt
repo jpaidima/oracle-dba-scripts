@@ -6,3 +6,6 @@ oci compute instance list-vnics --instance-id <oci>
 
 - Which hosts / vnic using the nsg 
 oci network nsg vnics list --nsg-id < ocid>
+
+-- From host run this to get instance metadata 
+curl http://169.254.169.254/opc/v1/instance/
