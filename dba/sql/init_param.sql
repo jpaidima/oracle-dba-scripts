@@ -1,3 +1,11 @@
+-- Check init parameters set at spfile level
+col sid format A10
+col name format A40
+col value format A40
+
+select sid, NAME,VALUE from v$spparameter where name like '%&&1%';
+
+
 -- Check which init parameters are modifiable at pdb level 
 select name, ispdb_modifiable
    from v$system_parameter
