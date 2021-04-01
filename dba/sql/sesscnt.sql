@@ -1,3 +1,27 @@
+set echo off
+set feed off
+set veri off
+set pagesize 2000
+set linesize 200
+set escape on
+set serveroutput on
+col machine format a40
+col service_name format a40
+col service format a40
+
+prompt Total Sessions by Instance
+select count(*) "Sessions",inst_id "Instance"
+from gv$session
+group by inst_id
+order by inst_id;
+
+prompt
+prompt Total Sessions by Status
+select count(*) "Sessions",inst_id "Instance", status
+from gv$session
+group by inst_id,status
+order by inst_id;
+
 set linesize 200
 
 select machine "Machine",
