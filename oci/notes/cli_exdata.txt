@@ -1,0 +1,7 @@
+--Cloud Exadata Infrastructure/vmcluster 
+
+oci db cloud-exa-infra list --compartment-id
+oci db cloud-vm-cluster list --compartment-id
+oci db node list --compartment-id <OCID> --vm-cluster-id <OCID>
+oci db database list --compartment-id <OCID> --vm-cluster-id <OCID>
+oci db db-home list --compartment-id <OCID> --vm-cluster-id <OCID>
