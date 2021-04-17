@@ -1,0 +1,9 @@
+-- To improve performance and better tracking of rman restore for bigfile tablespaces 
+-- Use maxopenfiles and section size. Depending on env section size and no, of channels need to be tweaked. 
+
+run{
+allocate channel c1 type disk connect '/@tnsalias' MAXOPENFILES=1;
+.....
+
+restore database from service <service name> section size <size in G>;
+}
