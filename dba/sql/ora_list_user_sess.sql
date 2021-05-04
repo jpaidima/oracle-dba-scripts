@@ -22,5 +22,5 @@ prompt
 prompt Session Details
 
 select inst_id,sid,osuser,machine,program, STATUS, LOGON_TIME, LAST_CALL_ET/60 as LAST_CALL_Min from gv$session w
-here
+where
 username=upper('&1') order by inst_id;
