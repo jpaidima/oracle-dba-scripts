@@ -12,3 +12,9 @@ curl http://169.254.169.254/opc/v1/instance/
 
 -- To just get region 
 curl http://169.254.169.254/opc/v1/instance/region
+
+-- For DB shapes 
+curl http://169.254.169.254/opc/v1/instance/shape
+ExadataCavium
+curl http://169.254.169.254/opc/v1/instance/shape
+VM.Standard2.8
