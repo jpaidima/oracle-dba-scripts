@@ -3,6 +3,7 @@
  /opt/oracle/dcs/bin/dbcli describe-latestpatch
  
  dbcli describe-component
+ dbcli list-jobs
  dbcli describe-job -i <job id>
 
 -- DBASS List available patches - Grid 
@@ -17,3 +18,21 @@ oci db patch-history list by-database --database-id <ocid>
 -- Patch using image 
 oci db database patch --database-id <ocid> \
  --database-software-image-id <image ocid> --patch-action APPLY 
+ 
+ - Patch using dblci on dbaas 
+ -- Agent update 
+ cliadm update-dbcli
+ -- Verify current version 
+ dbcli describe-component
+ -- Check whats the latest available 
+ dbcli describe-latestpatch
+ -- Grid pre-check 
+ dbcli update-server -p
+ - Grid update 
+ dbcli update-server
+-- Check db homes 
+dbcli list-dbhomes
+-- Pre-checks for db home 
+dbcli update-dbhome -i <home id> -p
+-- Update db home 
+dbcli update-dbhome -i <home id> 
